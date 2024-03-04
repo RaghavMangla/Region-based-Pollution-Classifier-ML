@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Argan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static\style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- features = df[['no2','so2','pm2_5','pm10','Leq','DO','pH','BOD','Land_use','NBR']] -->
+<div class="wrapper">
+    <form action="{{url_for('submit')}}" method="POST">
+        <h1>Pollution Analyser</h1>
+        <div class="input-box">
+            <input type="text" placeholder="NO2 conc." name='no2' required>
+            <!-- <i class='bx bx-buildings'></i> -->
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="SO2 conc." name='so2' required>
+            <!-- <i class='bx bx-buildings'></i> -->
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="PM2.5 conc." name='pm2_5' required>
+            <!-- <i class='bx bx-buildings'></i> -->
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="PM10 conc." name='pm10' required>
+            <!-- <i class='bx bx-buildings'></i> -->
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Leq" name='Leq' required>
+            <!-- <i class='bx bx-buildings'></i> -->
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="D.O." name='DO' required>
+            <!-- <i class='bx bx-buildings'></i> -->
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="ph water" name='pH' required>
+            <!-- <i class='bx bx-buildings'></i> -->
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="B.O.D" name='BOD' required>
+            <!-- <i class='bx bx-buildings'></i> -->
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Land use% agriculture" name='Land_use' required>
+            <!-- <i class='bx bx-buildings'></i> -->
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="NBR" name='NBR' required>
+            <!-- <i class='bx bx-buildings'></i> -->
+        </div>
+        <button type="/submit" class="btn">Predict</button>
+        
+      
+    </form>
+</div>
+</body>
+</html>

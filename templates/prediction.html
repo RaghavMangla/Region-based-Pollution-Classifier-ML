@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='pred_style.css') }}">
+    <title>Prediction</title>
+</head>
+<body>
+    <section>
+        {% if result==1  or result==3 or result==5 or result==7 or result==9 or result==11 or result==13 or result==15 %}
+        <section class="parallax-1">
+            <div class="parallax-inner">
+                <h1>Industrial Pollution</h1>
+            </div>
+        </section>
+        <h2>Strategies to reduce Industrial Pollution in {{name}}</h2>
+        <p>1. Cleaner Production Technologies:
+            Adopt technologies that reduce or eliminate the use of hazardous substances in manufacturing processes.
+            Code/Standard: Best Available Techniques (BAT) as defined by the Industrial Emissions Directive (IED) in the European Union.
+            </p>
+        <p>2. Air Pollution Control:
+             Use air pollution control technologies to capture and treat emissions. Code/Standard: Clean Air Act (CAA) in the United States and its regulations, such as the National Emission Standards for Hazardous Air Pollutants (NESHAP).
+            </p>
+        <p>3. Source Reduction:
+            Minimize the generation of pollutants at the source through process optimization and efficiency improvements.
+            Code/Standard: ISO 14001 (Environmental Management System standard) encourages organizations to identify and control environmental impacts, including pollution.
+            </p>
+        <p>4. Waste Minimization and Recycling:
+            Implement processes to reduce waste generation and promote recycling of materials.
+            Code/Standard: ANSI Z245 series for waste containers and ISO 14021 for environmental labels and declarations.
+            </p>
+         {% endif %}
+        {% if result==2 or result==3 or result==6 or result==7 or result==10 or result==11 or result==14 or result==15 %}
+        <section class="parallax-2">
+            <div class="parallax-inner">
+                <h1>Urban Pollution</h1>
+            </div>
+        </section>
+        <h2>Strategies to reduce pollution due to traffic and constructional activities in {{name}}</h2>
+        <p>1. Promotion of Alternative Fuels: Encourage the use of alternative fuels such as compressed natural gas (CNG), liquefied natural gas (LNG), and biofuels.
+            Code/Standard: Standards and regulations specifying the acceptable use and quality of alternative fuels.
+            </p>
+        <p>2. Vehicle Fleet Modernization Programs:
+             Introduce programs that incentivize the replacement of older, high-emission vehicles with newer, cleaner models.
+            Code/Standard: Regulations and incentives promoting the retirement of older vehicles.            
+            </p>
+        <p>3. Green Building Practices:
+            Implement green building techniques to enhance energy efficiency and reduce the environmental footprint of structures.
+            Code/Standard: Certification systems such as LEED (Leadership in Energy and Environmental Design) and local building codes incorporating green building standards.            
+            </p>
+        <p>4. Noise and Air Quality Control:Implement measures to control noise and air pollution during construction activities.
+            Code/Standard: Local ordinances and regulations that specify acceptable noise levels and air quality standards during construction.
+            </p>
+        {% endif %}
+        {% if result==4 or result==5 or result==6 or result==7 or result==12 or result==13 or result==14 or result==15 %}
+            <section class="parallax-3">
+                <div class="parallax-inner">
+                    <h1>Marine Pollution</h1>
+                </div>
+            </section>
+            <h2>Strategies to reduce marine pollution in {{name}}</h2>
+            <p>1. International Maritime Organization (IMO) Regulations:
+                Implement and adhere to IMO regulations that address various sources of marine pollution, including oil spills, sewage, and harmful substances.
+                Code/Standard: MARPOL (International Convention for the Prevention of Pollution from Ships) sets out regulations for the prevention of pollution from ships.
+                
+                </p>
+            <p>2. Vehicle Fleet Modernization Programs:
+                 Introduce programs that incentivize the replacement of older, high-emission vehicles with newer, cleaner models.
+                Code/Standard: Regulations and incentives promoting the retirement of older vehicles.            
+                </p>
+            <p>3. Green Building Practices:
+                 Implement green building techniques to enhance energy efficiency and reduce the environmental footprint of structures.
+                Code/Standard: Certification systems such as LEED (Leadership in Energy and Environmental Design) and local building codes incorporating green building standards.            
+                </p>
+            <p>4. Noise and Air Quality Control:Implement measures to control noise and air pollution during construction activities.
+                Code/Standard: Local ordinances and regulations that specify acceptable noise levels and air quality standards during construction.
+                </p>
+         {% endif %}
+         {% if result==8 or result==9 or result==10 or result==11 or result==12 or result==13 or result==14 or result==15 %}
+                <section class="parallax-4">
+                    <div class="parallax-inner">
+                        <h1>Agricultural Pollution</h1>
+                    </div>
+                </section>
+                <h2>Strategies to reduce agricultural pollution in {{name}}</h2>
+                <p>Precision Agriculture:
+                     Employ precision farming techniques to optimize resource use, reduce runoff, and minimize environmental impact.
+                    Code/Standard: No specific code, but precision agriculture practices align with sustainable farming guidelines promoted by organizations like the Sustainable Agriculture Research and Education (SARE).
+                    </p>
+                <p>2. Cover Crops and Buffer Zones:
+                    Plant cover crops and establish buffer zones to prevent soil erosion, reduce nutrient runoff, and filter pollutants.
+                    Code/Standard: USDA's Natural Resources Conservation Service (NRCS) provides guidelines on conservation practices, including cover cropping.     
+                    </p>
+                <p>3. Conservation Tillage:
+                    Implement minimal tillage practices to reduce soil disturbance, enhance water retention, and prevent erosion.
+                    Code/Standard: NRCS guidelines promote conservation tillage as a best practice for sustainable agriculture.                    
+                    </p>
+                <p>4.Integrated Pest Management (IPM):
+                    Utilize IPM practices to manage pests efficiently, minimizing the use of chemical pesticides and reducing environmental impact.
+                    Code/Standard: The Food and Agriculture Organization (FAO) promotes IPM principles, and various countries have IPM guidelines.
+                    </p>
+        {% endif %}
+    </section>
+</body>
+</html>
