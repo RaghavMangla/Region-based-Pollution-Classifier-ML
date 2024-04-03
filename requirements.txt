@@ -1,6 +1,2 @@
 Flask
-sklearn
-pandas
-numpy
-matplotlib
 Jinja2
