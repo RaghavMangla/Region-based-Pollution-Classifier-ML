@@ -57,6 +57,11 @@ Based on these predictions, our program was able to
 suggest the best strategies to be implemented in these
 regions for economic way of pollution control.
 
+Project Walkthrough:
+
+https://github.com/RaghavMangla/Region-based-Pollution-Classifier-ML/assets/97332401/0f9e42f0-24fe-4d8a-b25a-0df9ed581340
+
+The predictions for the 3 places shown in the video are for Delhi, Andaman and Nicobar Islands and Punjab
 
 
 
