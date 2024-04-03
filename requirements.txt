@@ -1,6 +1,13 @@
+setuptools
 requests
 pandas
 google-colab
 Flask
 numpy
-
+future
+matplotlib
+seaborn
+scikit-learn
+warnings
+pickle
+xgboost
